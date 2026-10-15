@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Planeador Pessoal</title>
+    <title>Planner Pessoal</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts -->
@@ -113,8 +113,8 @@
     <!-- Barra de Ações Superior (Oculta na Impressão) -->
     <div class="no-print mb-6 flex flex-wrap items-center justify-between gap-4 w-full max-w-6xl bg-white p-4 rounded-xl shadow-sm border border-slate-200">
         <div>
-            <h1 class="text-xl font-bold text-slate-800" contenteditable="true" id="app-title">O Meu Planeador Pessoal</h1>
-            <p class="text-sm text-slate-500">Clique em qualquer texto para o editar. Marque as caixas para acompanhar o seu progresso!</p>
+            <h1 class="text-xl font-bold text-slate-800" contenteditable="true" id="app-title">Planner Pessoal</h1>
+            <p class="text-sm text-slate-500">Clique em qualquer texto para o editar. Os dados são guardados automaticamente numa base de dados local!</p>
         </div>
         <div class="flex items-center gap-3 flex-wrap">
             <button onclick="saveData()" class="px-4 py-2 text-sm font-medium text-emerald-700 bg-emerald-50 hover:bg-emerald-100 border border-emerald-200 rounded-lg transition flex items-center gap-1.5">
@@ -135,7 +135,7 @@
         </div>
     </div>
 
-    <!-- Contentor Principal do Planeador -->
+    <!-- Contentor Principal do Planner -->
     <div id="planner-content" class="print-container bg-white w-full max-w-6xl p-6 sm:p-10 rounded-2xl shadow-xl border border-slate-200 relative overflow-hidden">
         
         <!-- Cabeçalho com Título Principal -->
@@ -148,7 +148,7 @@
                 <div class="h-10 w-24 bg-purple-200 rounded-lg"></div>
             </div>
             <h2 contenteditable="true" class="script-font text-5xl sm:text-6xl font-bold text-slate-900 tracking-wide relative z-10 inline-block focus:outline-none">
-                Planeador Semanal
+                Planner Semanal
             </h2>
         </div>
 
@@ -159,13 +159,13 @@
             <div class="border border-slate-200 rounded-xl overflow-hidden shadow-xs flex flex-col">
                 <div contenteditable="true" class="bg-sky-100 text-sky-900 py-2 text-center script-font text-2xl font-bold tracking-wide">Segunda-feira</div>
                 <div class="p-3 space-y-2 text-xs flex-1 bg-sky-50/30">
-                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">Tarefa 1</span></div>
-                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">Tarefa 2</span></div>
-                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">Tarefa 3</span></div>
-                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">Tarefa 4</span></div>
-                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">Tarefa 5</span></div>
-                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">Tarefa 6</span></div>
-                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">Tarefa 7</span></div>
+                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">_________________</span></div>
+                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">_________________</span></div>
+                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">_________________</span></div>
+                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">_________________</span></div>
+                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">_________________</span></div>
+                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">_________________</span></div>
+                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">_________________</span></div>
                 </div>
             </div>
 
@@ -173,13 +173,13 @@
             <div class="border border-slate-200 rounded-xl overflow-hidden shadow-xs flex flex-col">
                 <div contenteditable="true" class="bg-amber-100 text-amber-900 py-2 text-center script-font text-2xl font-bold tracking-wide">Terça-feira</div>
                 <div class="p-3 space-y-2 text-xs flex-1 bg-amber-50/30">
-                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">Tarefa 1</span></div>
-                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">Tarefa 2</span></div>
-                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">Tarefa 3</span></div>
-                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">Tarefa 4</span></div>
-                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">Tarefa 5</span></div>
-                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">Tarefa 6</span></div>
-                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">Tarefa 7</span></div>
+                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">_________________</span></div>
+                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">_________________</span></div>
+                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">_________________</span></div>
+                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">_________________</span></div>
+                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">_________________</span></div>
+                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">_________________</span></div>
+                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">_________________</span></div>
                 </div>
             </div>
 
@@ -187,13 +187,13 @@
             <div class="border border-slate-200 rounded-xl overflow-hidden shadow-xs flex flex-col">
                 <div contenteditable="true" class="bg-purple-100 text-purple-900 py-2 text-center script-font text-2xl font-bold tracking-wide">Quarta-feira</div>
                 <div class="p-3 space-y-2 text-xs flex-1 bg-purple-50/30">
-                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">Tarefa 1</span></div>
-                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">Tarefa 2</span></div>
-                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">Tarefa 3</span></div>
-                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">Tarefa 4</span></div>
-                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">Tarefa 5</span></div>
-                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">Tarefa 6</span></div>
-                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">Tarefa 7</span></div>
+                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">_________________</span></div>
+                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">_________________</span></div>
+                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">_________________</span></div>
+                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">_________________</span></div>
+                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">_________________</span></div>
+                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">_________________</span></div>
+                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">_________________</span></div>
                 </div>
             </div>
 
@@ -201,13 +201,13 @@
             <div class="border border-slate-200 rounded-xl overflow-hidden shadow-xs flex flex-col">
                 <div contenteditable="true" class="bg-emerald-100 text-emerald-900 py-2 text-center script-font text-2xl font-bold tracking-wide">Quinta-feira</div>
                 <div class="p-3 space-y-2 text-xs flex-1 bg-emerald-50/30">
-                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">Tarefa 1</span></div>
-                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">Tarefa 2</span></div>
-                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">Tarefa 3</span></div>
-                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">Tarefa 4</span></div>
-                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">Tarefa 5</span></div>
-                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">Tarefa 6</span></div>
-                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">Tarefa 7</span></div>
+                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">_________________</span></div>
+                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">_________________</span></div>
+                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">_________________</span></div>
+                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">_________________</span></div>
+                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">_________________</span></div>
+                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">_________________</span></div>
+                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">_________________</span></div>
                 </div>
             </div>
 
@@ -215,13 +215,13 @@
             <div class="border border-slate-200 rounded-xl overflow-hidden shadow-xs flex flex-col">
                 <div contenteditable="true" class="bg-rose-100 text-rose-900 py-2 text-center script-font text-2xl font-bold tracking-wide">Sexta-feira</div>
                 <div class="p-3 space-y-2 text-xs flex-1 bg-rose-50/30">
-                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">Tarefa 1</span></div>
-                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">Tarefa 2</span></div>
-                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">Tarefa 3</span></div>
-                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">Tarefa 4</span></div>
-                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">Tarefa 5</span></div>
-                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">Tarefa 6</span></div>
-                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">Tarefa 7</span></div>
+                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">_________________</span></div>
+                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">_________________</span></div>
+                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">_________________</span></div>
+                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">_________________</span></div>
+                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">_________________</span></div>
+                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">_________________</span></div>
+                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">_________________</span></div>
                 </div>
             </div>
 
@@ -229,13 +229,13 @@
             <div class="border border-slate-200 rounded-xl overflow-hidden shadow-xs flex flex-col">
                 <div contenteditable="true" class="bg-amber-100 text-amber-900 py-2 text-center script-font text-2xl font-bold tracking-wide">Sábado</div>
                 <div class="p-3 space-y-2 text-xs flex-1 bg-amber-50/30">
-                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">Tarefa 1</span></div>
-                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">Tarefa 2</span></div>
-                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">Tarefa 3</span></div>
-                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">Tarefa 4</span></div>
-                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">Tarefa 5</span></div>
-                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">Tarefa 6</span></div>
-                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">Tarefa 7</span></div>
+                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">_________________</span></div>
+                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">_________________</span></div>
+                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">_________________</span></div>
+                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">_________________</span></div>
+                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">_________________</span></div>
+                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">_________________</span></div>
+                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">_________________</span></div>
                 </div>
             </div>
 
@@ -243,13 +243,13 @@
             <div class="border border-slate-200 rounded-xl overflow-hidden shadow-xs flex flex-col">
                 <div contenteditable="true" class="bg-orange-100 text-orange-900 py-2 text-center script-font text-2xl font-bold tracking-wide">Domingo</div>
                 <div class="p-3 space-y-2 text-xs flex-1 bg-orange-50/30">
-                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">Tarefa 1</span></div>
-                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">Tarefa 2</span></div>
-                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">Tarefa 3</span></div>
-                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">Tarefa 4</span></div>
-                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">Tarefa 5</span></div>
-                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">Tarefa 6</span></div>
-                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">Tarefa 7</span></div>
+                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">_________________</span></div>
+                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">_________________</span></div>
+                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">_________________</span></div>
+                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">_________________</span></div>
+                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">_________________</span></div>
+                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">_________________</span></div>
+                    <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1">_________________</span></div>
                 </div>
             </div>
 
@@ -268,9 +268,8 @@
                 </div>
                 
                 <div class="space-y-3">
-                    <!-- Linha 1 -->
                     <div class="flex items-center justify-between text-xs border-b border-dashed border-slate-100 pb-2 gap-2">
-                        <span contenteditable="true" class="font-medium text-slate-700 flex-1">Hábito / Tarefa 1</span>
+                        <span contenteditable="true" class="font-medium text-slate-700 flex-1">_________________</span>
                         <div class="flex gap-2">
                             <div class="tracker-box bg-rose-300 opacity-30"></div>
                             <div class="tracker-box bg-rose-300 opacity-30"></div>
@@ -281,9 +280,8 @@
                             <div class="tracker-box bg-rose-300 opacity-30"></div>
                         </div>
                     </div>
-                    <!-- Linha 2 -->
                     <div class="flex items-center justify-between text-xs border-b border-dashed border-slate-100 pb-2 gap-2">
-                        <span contenteditable="true" class="font-medium text-slate-700 flex-1">Hábito / Tarefa 2</span>
+                        <span contenteditable="true" class="font-medium text-slate-700 flex-1">_________________</span>
                         <div class="flex gap-2">
                             <div class="tracker-box bg-rose-300 opacity-30"></div>
                             <div class="tracker-box bg-rose-300 opacity-30"></div>
@@ -294,9 +292,8 @@
                             <div class="tracker-box bg-rose-300 opacity-30"></div>
                         </div>
                     </div>
-                    <!-- Linha 3 -->
                     <div class="flex items-center justify-between text-xs border-b border-dashed border-slate-100 pb-2 gap-2">
-                        <span contenteditable="true" class="font-medium text-slate-700 flex-1">Hábito / Tarefa 3</span>
+                        <span contenteditable="true" class="font-medium text-slate-700 flex-1">_________________</span>
                         <div class="flex gap-2">
                             <div class="tracker-box bg-rose-300 opacity-30"></div>
                             <div class="tracker-box bg-rose-300 opacity-30"></div>
@@ -307,9 +304,8 @@
                             <div class="tracker-box bg-rose-300 opacity-30"></div>
                         </div>
                     </div>
-                    <!-- Linha 4 -->
                     <div class="flex items-center justify-between text-xs border-b border-dashed border-slate-100 pb-2 gap-2">
-                        <span contenteditable="true" class="font-medium text-slate-700 flex-1">Hábito / Tarefa 4</span>
+                        <span contenteditable="true" class="font-medium text-slate-700 flex-1">_________________</span>
                         <div class="flex gap-2">
                             <div class="tracker-box bg-rose-300 opacity-30"></div>
                             <div class="tracker-box bg-rose-300 opacity-30"></div>
@@ -320,9 +316,8 @@
                             <div class="tracker-box bg-rose-300 opacity-30"></div>
                         </div>
                     </div>
-                    <!-- Linha 5 -->
                     <div class="flex items-center justify-between text-xs border-b border-dashed border-slate-100 pb-2 gap-2">
-                        <span contenteditable="true" class="font-medium text-slate-700 flex-1">Hábito / Tarefa 5</span>
+                        <span contenteditable="true" class="font-medium text-slate-700 flex-1">_________________</span>
                         <div class="flex gap-2">
                             <div class="tracker-box bg-rose-300 opacity-30"></div>
                             <div class="tracker-box bg-rose-300 opacity-30"></div>
@@ -333,9 +328,8 @@
                             <div class="tracker-box bg-rose-300 opacity-30"></div>
                         </div>
                     </div>
-                    <!-- Linha 6 -->
                     <div class="flex items-center justify-between text-xs border-b border-dashed border-slate-100 pb-2 gap-2">
-                        <span contenteditable="true" class="font-medium text-slate-700 flex-1">Hábito / Tarefa 6</span>
+                        <span contenteditable="true" class="font-medium text-slate-700 flex-1">_________________</span>
                         <div class="flex gap-2">
                             <div class="tracker-box bg-rose-300 opacity-30"></div>
                             <div class="tracker-box bg-rose-300 opacity-30"></div>
@@ -346,9 +340,8 @@
                             <div class="tracker-box bg-rose-300 opacity-30"></div>
                         </div>
                     </div>
-                    <!-- Linha 7 -->
                     <div class="flex items-center justify-between text-xs pb-1 gap-2">
-                        <span contenteditable="true" class="font-medium text-slate-700 flex-1">Hábito / Tarefa 7</span>
+                        <span contenteditable="true" class="font-medium text-slate-700 flex-1">_________________</span>
                         <div class="flex gap-2">
                             <div class="tracker-box bg-rose-300 opacity-30"></div>
                             <div class="tracker-box bg-rose-300 opacity-30"></div>
@@ -372,9 +365,8 @@
                 </div>
 
                 <div class="space-y-3">
-                    <!-- Linha 1 -->
                     <div class="flex items-center justify-between text-xs border-b border-dashed border-slate-100 pb-2 gap-2">
-                        <span contenteditable="true" class="font-medium text-slate-700 flex-1">Objetivo / Tarefa 1</span>
+                        <span contenteditable="true" class="font-medium text-slate-700 flex-1">_________________</span>
                         <div class="flex gap-1.5">
                             <div class="tracker-box bg-purple-300 opacity-30"></div>
                             <div class="tracker-box bg-purple-300 opacity-30"></div>
@@ -390,9 +382,8 @@
                             <div class="tracker-box bg-purple-300 opacity-30"></div>
                         </div>
                     </div>
-                    <!-- Linha 2 -->
                     <div class="flex items-center justify-between text-xs border-b border-dashed border-slate-100 pb-2 gap-2">
-                        <span contenteditable="true" class="font-medium text-slate-700 flex-1">Objetivo / Tarefa 2</span>
+                        <span contenteditable="true" class="font-medium text-slate-700 flex-1">_________________</span>
                         <div class="flex gap-1.5">
                             <div class="tracker-box bg-purple-300 opacity-30"></div>
                             <div class="tracker-box bg-purple-300 opacity-30"></div>
@@ -408,9 +399,8 @@
                             <div class="tracker-box bg-purple-300 opacity-30"></div>
                         </div>
                     </div>
-                    <!-- Linha 3 -->
                     <div class="flex items-center justify-between text-xs border-b border-dashed border-slate-100 pb-2 gap-2">
-                        <span contenteditable="true" class="font-medium text-slate-700 flex-1">Objetivo / Tarefa 3</span>
+                        <span contenteditable="true" class="font-medium text-slate-700 flex-1">_________________</span>
                         <div class="flex gap-1.5">
                             <div class="tracker-box bg-purple-300 opacity-30"></div>
                             <div class="tracker-box bg-purple-300 opacity-30"></div>
@@ -426,9 +416,8 @@
                             <div class="tracker-box bg-purple-300 opacity-30"></div>
                         </div>
                     </div>
-                    <!-- Linha 4 -->
                     <div class="flex items-center justify-between text-xs border-b border-dashed border-slate-100 pb-2 gap-2">
-                        <span contenteditable="true" class="font-medium text-slate-700 flex-1">Objetivo / Tarefa 4</span>
+                        <span contenteditable="true" class="font-medium text-slate-700 flex-1">_________________</span>
                         <div class="flex gap-1.5">
                             <div class="tracker-box bg-purple-300 opacity-30"></div>
                             <div class="tracker-box bg-purple-300 opacity-30"></div>
@@ -444,9 +433,8 @@
                             <div class="tracker-box bg-purple-300 opacity-30"></div>
                         </div>
                     </div>
-                    <!-- Linha 5 -->
                     <div class="flex items-center justify-between text-xs border-b border-dashed border-slate-100 pb-2 gap-2">
-                        <span contenteditable="true" class="font-medium text-slate-700 flex-1">Objetivo / Tarefa 5</span>
+                        <span contenteditable="true" class="font-medium text-slate-700 flex-1">_________________</span>
                         <div class="flex gap-1.5">
                             <div class="tracker-box bg-purple-300 opacity-30"></div>
                             <div class="tracker-box bg-purple-300 opacity-30"></div>
@@ -462,9 +450,8 @@
                             <div class="tracker-box bg-purple-300 opacity-30"></div>
                         </div>
                     </div>
-                    <!-- Linha 6 -->
                     <div class="flex items-center justify-between text-xs border-b border-dashed border-slate-100 pb-2 gap-2">
-                        <span contenteditable="true" class="font-medium text-slate-700 flex-1">Objetivo / Tarefa 6</span>
+                        <span contenteditable="true" class="font-medium text-slate-700 flex-1">_________________</span>
                         <div class="flex gap-1.5">
                             <div class="tracker-box bg-purple-300 opacity-30"></div>
                             <div class="tracker-box bg-purple-300 opacity-30"></div>
@@ -480,9 +467,8 @@
                             <div class="tracker-box bg-purple-300 opacity-30"></div>
                         </div>
                     </div>
-                    <!-- Linha 7 -->
                     <div class="flex items-center justify-between text-xs pb-1 gap-2">
-                        <span contenteditable="true" class="font-medium text-slate-700 flex-1">Objetivo / Tarefa 7</span>
+                        <span contenteditable="true" class="font-medium text-slate-700 flex-1">_________________</span>
                         <div class="flex gap-1.5">
                             <div class="tracker-box bg-purple-300 opacity-30"></div>
                             <div class="tracker-box bg-purple-300 opacity-30"></div>
@@ -516,7 +502,7 @@
                 </div>
                 <div class="space-y-2.5 text-xs">
                     <div class="flex items-center justify-between border-b border-dashed border-slate-100 pb-1.5 gap-2">
-                        <span contenteditable="true" class="text-slate-700 flex-1">Projeto / Evento 1</span>
+                        <span contenteditable="true" class="text-slate-700 flex-1">_________________</span>
                         <div class="flex gap-2">
                             <div class="tracker-box bg-amber-300 opacity-30"></div>
                             <div class="tracker-box bg-amber-300 opacity-30"></div>
@@ -525,7 +511,7 @@
                         </div>
                     </div>
                     <div class="flex items-center justify-between border-b border-dashed border-slate-100 pb-1.5 gap-2">
-                        <span contenteditable="true" class="text-slate-700 flex-1">Projeto / Evento 2</span>
+                        <span contenteditable="true" class="text-slate-700 flex-1">_________________</span>
                         <div class="flex gap-2">
                             <div class="tracker-box bg-amber-300 opacity-30"></div>
                             <div class="tracker-box bg-amber-300 opacity-30"></div>
@@ -534,7 +520,7 @@
                         </div>
                     </div>
                     <div class="flex items-center justify-between border-b border-dashed border-slate-100 pb-1.5 gap-2">
-                        <span contenteditable="true" class="text-slate-700 flex-1">Projeto / Evento 3</span>
+                        <span contenteditable="true" class="text-slate-700 flex-1">_________________</span>
                         <div class="flex gap-2">
                             <div class="tracker-box bg-amber-300 opacity-30"></div>
                             <div class="tracker-box bg-amber-300 opacity-30"></div>
@@ -543,7 +529,7 @@
                         </div>
                     </div>
                     <div class="flex items-center justify-between border-b border-dashed border-slate-100 pb-1.5 gap-2">
-                        <span contenteditable="true" class="text-slate-700 flex-1">Projeto / Evento 4</span>
+                        <span contenteditable="true" class="text-slate-700 flex-1">_________________</span>
                         <div class="flex gap-2">
                             <div class="tracker-box bg-amber-300 opacity-30"></div>
                             <div class="tracker-box bg-amber-300 opacity-30"></div>
@@ -552,7 +538,7 @@
                         </div>
                     </div>
                     <div class="flex items-center justify-between border-b border-dashed border-slate-100 pb-1.5 gap-2">
-                        <span contenteditable="true" class="text-slate-700 flex-1">Projeto / Evento 5</span>
+                        <span contenteditable="true" class="text-slate-700 flex-1">_________________</span>
                         <div class="flex gap-2">
                             <div class="tracker-box bg-amber-300 opacity-30"></div>
                             <div class="tracker-box bg-amber-300 opacity-30"></div>
@@ -561,7 +547,7 @@
                         </div>
                     </div>
                     <div class="flex items-center justify-between pb-1 gap-2">
-                        <span contenteditable="true" class="text-slate-700 flex-1">Projeto / Evento 6</span>
+                        <span contenteditable="true" class="text-slate-700 flex-1">_________________</span>
                         <div class="flex gap-2">
                             <div class="tracker-box bg-amber-300 opacity-30"></div>
                             <div class="tracker-box bg-amber-300 opacity-30"></div>
@@ -582,42 +568,42 @@
                 </div>
                 <div class="space-y-2.5 text-xs">
                     <div class="flex items-center justify-between border-b border-dashed border-slate-100 pb-1.5 gap-2">
-                        <span contenteditable="true" class="text-slate-700 flex-1">Meta Semestral 1</span>
+                        <span contenteditable="true" class="text-slate-700 flex-1">_________________</span>
                         <div class="flex gap-3">
                             <div class="tracker-box bg-emerald-300 opacity-30"></div>
                             <div class="tracker-box bg-emerald-300 opacity-30"></div>
                         </div>
                     </div>
                     <div class="flex items-center justify-between border-b border-dashed border-slate-100 pb-1.5 gap-2">
-                        <span contenteditable="true" class="text-slate-700 flex-1">Meta Semestral 2</span>
+                        <span contenteditable="true" class="text-slate-700 flex-1">_________________</span>
                         <div class="flex gap-3">
                             <div class="tracker-box bg-emerald-300 opacity-30"></div>
                             <div class="tracker-box bg-emerald-300 opacity-30"></div>
                         </div>
                     </div>
                     <div class="flex items-center justify-between border-b border-dashed border-slate-100 pb-1.5 gap-2">
-                        <span contenteditable="true" class="text-slate-700 flex-1">Meta Semestral 3</span>
+                        <span contenteditable="true" class="text-slate-700 flex-1">_________________</span>
                         <div class="flex gap-3">
                             <div class="tracker-box bg-emerald-300 opacity-30"></div>
                             <div class="tracker-box bg-emerald-300 opacity-30"></div>
                         </div>
                     </div>
                     <div class="flex items-center justify-between border-b border-dashed border-slate-100 pb-1.5 gap-2">
-                        <span contenteditable="true" class="text-slate-700 flex-1">Meta Semestral 4</span>
+                        <span contenteditable="true" class="text-slate-700 flex-1">_________________</span>
                         <div class="flex gap-3">
                             <div class="tracker-box bg-emerald-300 opacity-30"></div>
                             <div class="tracker-box bg-emerald-300 opacity-30"></div>
                         </div>
                     </div>
                     <div class="flex items-center justify-between border-b border-dashed border-slate-100 pb-1.5 gap-2">
-                        <span contenteditable="true" class="text-slate-700 flex-1">Meta Semestral 5</span>
+                        <span contenteditable="true" class="text-slate-700 flex-1">_________________</span>
                         <div class="flex gap-3">
                             <div class="tracker-box bg-emerald-300 opacity-30"></div>
                             <div class="tracker-box bg-emerald-300 opacity-30"></div>
                         </div>
                     </div>
                     <div class="flex items-center justify-between pb-1 gap-2">
-                        <span contenteditable="true" class="text-slate-700 flex-1">Meta Semestral 6</span>
+                        <span contenteditable="true" class="text-slate-700 flex-1">_________________</span>
                         <div class="flex gap-3">
                             <div class="tracker-box bg-emerald-300 opacity-30"></div>
                             <div class="tracker-box bg-emerald-300 opacity-30"></div>
@@ -633,18 +619,18 @@
                     <span contenteditable="true" class="text-[10px] font-bold text-slate-400">Por Mês</span>
                 </div>
                 <div class="grid grid-cols-2 gap-x-4 gap-y-2 text-xs">
-                    <div class="flex items-center gap-2 border-b border-dashed border-slate-100 pb-1.5"><span class="font-bold text-sky-700">J</span><span contenteditable="true" class="text-slate-700 flex-1">Janeiro</span></div>
-                    <div class="flex items-center gap-2 border-b border-dashed border-slate-100 pb-1.5"><span class="font-bold text-sky-700">J</span><span contenteditable="true" class="text-slate-700 flex-1">Julho</span></div>
-                    <div class="flex items-center gap-2 border-b border-dashed border-slate-100 pb-1.5"><span class="font-bold text-sky-700">F</span><span contenteditable="true" class="text-slate-700 flex-1">Fevereiro</span></div>
-                    <div class="flex items-center gap-2 border-b border-dashed border-slate-100 pb-1.5"><span class="font-bold text-sky-700">A</span><span contenteditable="true" class="text-slate-700 flex-1">Agosto</span></div>
-                    <div class="flex items-center gap-2 border-b border-dashed border-slate-100 pb-1.5"><span class="font-bold text-sky-700">M</span><span contenteditable="true" class="text-slate-700 flex-1">Março</span></div>
-                    <div class="flex items-center gap-2 border-b border-dashed border-slate-100 pb-1.5"><span class="font-bold text-sky-700">S</span><span contenteditable="true" class="text-slate-700 flex-1">Setembro</span></div>
-                    <div class="flex items-center gap-2 border-b border-dashed border-slate-100 pb-1.5"><span class="font-bold text-sky-700">A</span><span contenteditable="true" class="text-slate-700 flex-1">Abril</span></div>
-                    <div class="flex items-center gap-2 border-b border-dashed border-slate-100 pb-1.5"><span class="font-bold text-sky-700">O</span><span contenteditable="true" class="text-slate-700 flex-1">Outubro</span></div>
-                    <div class="flex items-center gap-2 border-b border-dashed border-slate-100 pb-1.5"><span class="font-bold text-sky-700">M</span><span contenteditable="true" class="text-slate-700 flex-1">Maio</span></div>
-                    <div class="flex items-center gap-2 border-b border-dashed border-slate-100 pb-1.5"><span class="font-bold text-sky-700">N</span><span contenteditable="true" class="text-slate-700 flex-1">Novembro</span></div>
-                    <div class="flex items-center gap-2 pb-1"><span class="font-bold text-sky-700">J</span><span contenteditable="true" class="text-slate-700 flex-1">Junho</span></div>
-                    <div class="flex items-center gap-2 pb-1"><span class="font-bold text-sky-700">D</span><span contenteditable="true" class="text-slate-700 flex-1">Dezembro</span></div>
+                    <div class="flex items-center gap-2 border-b border-dashed border-slate-100 pb-1.5"><span class="font-bold text-sky-700">J</span><span contenteditable="true" class="text-slate-700 flex-1">_________________</span></div>
+                    <div class="flex items-center gap-2 border-b border-dashed border-slate-100 pb-1.5"><span class="font-bold text-sky-700">J</span><span contenteditable="true" class="text-slate-700 flex-1">_________________</span></div>
+                    <div class="flex items-center gap-2 border-b border-dashed border-slate-100 pb-1.5"><span class="font-bold text-sky-700">F</span><span contenteditable="true" class="text-slate-700 flex-1">_________________</span></div>
+                    <div class="flex items-center gap-2 border-b border-dashed border-slate-100 pb-1.5"><span class="font-bold text-sky-700">A</span><span contenteditable="true" class="text-slate-700 flex-1">_________________</span></div>
+                    <div class="flex items-center gap-2 border-b border-dashed border-slate-100 pb-1.5"><span class="font-bold text-sky-700">M</span><span contenteditable="true" class="text-slate-700 flex-1">_________________</span></div>
+                    <div class="flex items-center gap-2 border-b border-dashed border-slate-100 pb-1.5"><span class="font-bold text-sky-700">S</span><span contenteditable="true" class="text-slate-700 flex-1">_________________</span></div>
+                    <div class="flex items-center gap-2 border-b border-dashed border-slate-100 pb-1.5"><span class="font-bold text-sky-700">A</span><span contenteditable="true" class="text-slate-700 flex-1">_________________</span></div>
+                    <div class="flex items-center gap-2 border-b border-dashed border-slate-100 pb-1.5"><span class="font-bold text-sky-700">O</span><span contenteditable="true" class="text-slate-700 flex-1">_________________</span></div>
+                    <div class="flex items-center gap-2 border-b border-dashed border-slate-100 pb-1.5"><span class="font-bold text-sky-700">M</span><span contenteditable="true" class="text-slate-700 flex-1">_________________</span></div>
+                    <div class="flex items-center gap-2 border-b border-dashed border-slate-100 pb-1.5"><span class="font-bold text-sky-700">N</span><span contenteditable="true" class="text-slate-700 flex-1">_________________</span></div>
+                    <div class="flex items-center gap-2 pb-1"><span class="font-bold text-sky-700">J</span><span contenteditable="true" class="text-slate-700 flex-1">_________________</span></div>
+                    <div class="flex items-center gap-2 pb-1"><span class="font-bold text-sky-700">D</span><span contenteditable="true" class="text-slate-700 flex-1">_________________</span></div>
                 </div>
             </div>
 
@@ -652,22 +638,44 @@
 
         <!-- Rodapé -->
         <div class="mt-8 text-center text-xs text-slate-400 border-t border-slate-100 pt-4">
-            Planeador Editável e Interativo
+            Planner Pessoal Editável com Base de Dados IndexedDB
         </div>
 
     </div>
 
-    <!-- Script para Lógica Interativa e Guardar Dados -->
+    <!-- Script para IndexedDB e Lógica Interativa -->
     <script>
+        let db;
+
+        // Inicializar IndexedDB
+        function initDB() {
+            const request = indexedDB.open('PlannerDB', 1);
+
+            request.onerror = function(event) {
+                console.error("Erro ao abrir a base de dados IndexedDB:", event.target.error);
+            };
+
+            request.onupgradeneeded = function(event) {
+                db = event.target.result;
+                if (!db.objectStoreNames.contains('plannerStore')) {
+                    db.createObjectStore('plannerStore');
+                }
+            };
+
+            request.onsuccess = function(event) {
+                db = event.target.result;
+                loadDataFromDB();
+            };
+        }
+
         document.addEventListener('DOMContentLoaded', () => {
-            loadSavedData();
+            initDB();
             initInteractivity();
         });
 
         function initInteractivity() {
-            // Riscar texto ao selecionar a checkbox
             document.querySelectorAll('.task-check').forEach(checkbox => {
-                checkbox.addEventListener('change', function() {
+                checkbox.onchange = function() {
                     const textSpan = this.nextElementSibling;
                     if (textSpan) {
                         if (this.checked) {
@@ -676,10 +684,9 @@
                             textSpan.classList.remove('task-checked');
                         }
                     }
-                });
+                };
             });
 
-            // Alternar estado dos seletores em grelha (caixas)
             document.querySelectorAll('.tracker-box').forEach(box => {
                 box.onclick = function() {
                     this.classList.toggle('active');
@@ -687,69 +694,91 @@
             });
         }
 
-        // Guardar as alterações feitas nos campos de texto e caixas de seleção
+        // Guardar dados no IndexedDB
         function saveData() {
+            if (!db) {
+                alert("A base de dados ainda não está pronta.");
+                return;
+            }
+
             const plannerContent = document.getElementById('planner-content').innerHTML;
             
-            // Guardar estados das checkboxes
             const checkboxStates = [];
             document.querySelectorAll('.task-check').forEach(cb => {
                 checkboxStates.push(cb.checked);
             });
 
-            // Guardar estados das caixas do rastreador
             const trackerStates = [];
             document.querySelectorAll('.tracker-box').forEach(box => {
                 trackerStates.push(box.classList.contains('active'));
             });
 
-            localStorage.setItem('myPlannerHTML', plannerContent);
-            localStorage.setItem('myPlannerCheckboxes', JSON.stringify(checkboxStates));
-            localStorage.setItem('myPlannerTrackers', JSON.stringify(trackerStates));
+            const transaction = db.transaction(['plannerStore'], 'readwrite');
+            const store = transaction.objectStore('plannerStore');
 
-            alert('Planeador guardado com sucesso!');
+            const data = {
+                html: plannerContent,
+                checkboxes: checkboxStates,
+                trackers: trackerStates
+            };
+
+            const request = store.put(data, 'currentPlanner');
+
+            request.onsuccess = function() {
+                alert('Planner guardado com sucesso na base de dados IndexedDB!');
+            };
+
+            request.onerror = function(event) {
+                console.error("Erro ao guardar dados:", event.target.error);
+                alert('Erro ao guardar os dados.');
+            };
         }
 
-        // Carregar os dados salvos anteriormente no browser
-        function loadSavedData() {
-            const savedHTML = localStorage.getItem('myPlannerHTML');
-            if (savedHTML) {
-                document.getElementById('planner-content').innerHTML = savedHTML;
+        // Carregar dados do IndexedDB
+        function loadDataFromDB() {
+            const transaction = db.transaction(['plannerStore'], 'readonly');
+            const store = transaction.objectStore('plannerStore');
+            const request = store.get('currentPlanner');
 
-                // Restaurar estados das checkboxes
-                const checkboxStates = JSON.parse(localStorage.getItem('myPlannerCheckboxes') || '[]');
-                document.querySelectorAll('.task-check').forEach((cb, index) => {
-                    if (checkboxStates[index] !== undefined) {
-                        cb.checked = checkboxStates[index];
-                        const textSpan = cb.nextElementSibling;
-                        if (textSpan) {
-                            if (cb.checked) {
-                                textSpan.classList.add('task-checked');
-                            } else {
-                                textSpan.classList.remove('task-checked');
+            request.onsuccess = function(event) {
+                const data = event.target.result;
+                if (data) {
+                    if (data.html) {
+                        document.getElementById('planner-content').innerHTML = data.html;
+                    }
+
+                    if (data.checkboxes) {
+                        document.querySelectorAll('.task-check').forEach((cb, index) => {
+                            if (data.checkboxes[index] !== undefined) {
+                                cb.checked = data.checkboxes[index];
+                                const textSpan = cb.nextElementSibling;
+                                if (textSpan && cb.checked) {
+                                    textSpan.classList.add('task-checked');
+                                }
                             }
-                        }
+                        });
                     }
-                });
 
-                // Restaurar estados das caixas do rastreador
-                const trackerStates = JSON.parse(localStorage.getItem('myPlannerTrackers') || '[]');
-                document.querySelectorAll('.tracker-box').forEach((box, index) => {
-                    if (trackerStates[index]) {
-                        box.classList.add('active');
-                    } else {
-                        box.classList.remove('active');
+                    if (data.trackers) {
+                        document.querySelectorAll('.tracker-box').forEach((box, index) => {
+                            if (data.trackers[index]) {
+                                box.classList.add('active');
+                            }
+                        });
                     }
-                });
 
-                // Reassocia eventos de clique
-                initInteractivity();
-            }
+                    initInteractivity();
+                }
+            };
+
+            request.onerror = function(event) {
+                console.error("Erro ao carregar dados do IndexedDB:", event.target.error);
+            };
         }
 
-        // Reiniciar marcações mantendo os textos editados
+        // Reiniciar marcações mantendo os textos
         function resetPlanner() {
-            if (confirm("Tem a certeza que deseja desmarcar todas as caixas de verificação? (Os textos não serão apagados)")) {
+            if (confirm("Tem a certeza que deseja desmarcar todas as caixas de verificação?")) {
                 document.querySelectorAll('.task-check').forEach(cb => {
                     cb.checked = false;
                     const textSpan = cb.nextElementSibling;
@@ -763,4 +792,3 @@
     </script>
 </body>
 </html>
-```eof
