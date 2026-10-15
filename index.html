@@ -8,6 +8,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="./manifest.json">
+    <meta name="theme-color" content="#475569">
     <style>
         body {
             font-family: 'Inter', sans-serif;
@@ -690,8 +693,17 @@
 
     </div>
 
-    <!-- Script para IndexedDB e Lógica Interativa com Auto-Save -->
+    <!-- Script para Registo do Service Worker, IndexedDB e Lógica Interativa -->
     <script>
+        // Registo do Service Worker para suporte PWA/Offline
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./sw.js')
+                    .then(reg => console.log('Service Worker registado com sucesso:', reg.scope))
+                    .catch(err => console.error('Erro ao registar o Service Worker:', err));
+            });
+        }
+
         let db;
         let saveTimeout;
 
