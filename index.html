@@ -2,7 +2,7 @@
 <html lang="pt-PT">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=1400">
     <title>Planner Pessoal</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -126,8 +126,8 @@
 </head>
 <body class="min-h-screen py-8 px-4 flex flex-col items-center">
 
-    <!-- Contentor Principal do Planner (Ainda mais largo) -->
-    <div id="planner-content" class="print-container bg-white w-full max-w-[90rem] p-6 sm:p-10 rounded-2xl shadow-xl border border-slate-200 relative overflow-hidden">
+    <!-- Contentor Principal do Planner (Largura fixa para forçar aspeto de computador) -->
+    <div id="planner-content" class="print-container bg-white w-[1400px] p-6 sm:p-10 rounded-2xl shadow-xl border border-slate-200 relative overflow-hidden">
         
         <!-- Cabeçalho com Título Principal -->
         <div class="relative text-center mb-8 pb-4 border-b border-slate-200">
@@ -144,7 +144,7 @@
         </div>
 
         <!-- SECÇÃO 1: DIAS DA SEMANA (Segunda a Domingo) -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-7 gap-4 mb-10">
+        <div class="grid grid-cols-7 gap-4 mb-10">
             
             <!-- Segunda-feira -->
             <div class="border border-slate-200 rounded-xl overflow-hidden shadow-xs flex flex-col">
@@ -268,7 +268,7 @@
         </div>
 
         <!-- SECÇÃO 2: DIÁRIO E MENSAL -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
+        <div class="grid grid-cols-2 gap-8 mb-10">
             
             <!-- Coluna Diária -->
             <div class="border border-slate-200 rounded-xl p-5 bg-white shadow-xs">
@@ -519,7 +519,7 @@
         </div>
 
         <!-- SECÇÃO 3: TRIMESTRAL, SEMESTRAL, ANUAL -->
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-10">
+        <div class="grid grid-cols-3 gap-6 mb-10">
             
             <!-- Trimestral -->
             <div class="border border-slate-200 rounded-xl p-4 bg-white shadow-xs">
@@ -670,7 +670,7 @@
         </div>
 
         <!-- Botões de Ação Apelativos no Fundo (Ocultos na Impressão) -->
-        <div class="no-print pt-6 border-t border-slate-200 flex flex-wrap items-center justify-center gap-4">
+        <div class="no-print pt-6 border-t border-slate-200 flex items-center justify-center gap-4">
             <button onclick="resetPlanner()" class="px-6 py-3 text-sm font-semibold text-slate-700 bg-gradient-to-r from-slate-100 to-slate-200 hover:from-slate-200 hover:to-slate-300 border border-slate-300 rounded-xl shadow-sm transition transform hover:-translate-y-0.5 flex items-center gap-2">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
@@ -686,7 +686,7 @@
         </div>
 
         <!-- Rodapé do Planner -->
-        <div class="mt-8 pt-4 border-t border-slate-100 flex flex-col sm:flex-row items-center justify-between text-center gap-2">
+        <div class="mt-8 pt-4 border-t border-slate-100 flex items-center justify-between text-center gap-2">
             <p class="text-xs text-slate-400 italic font-medium flex-1">Criado com carinho para que os compromissos estejam na palma da mão à distância de um clique.</p>
             <span class="text-[11px] text-slate-300 font-mono font-semibold tracking-wider">v0.0.1</span>
         </div>
