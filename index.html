@@ -123,8 +123,8 @@
 </head>
 <body class="min-h-screen py-8 px-4 flex flex-col items-center">
 
-    <!-- Contentor Principal do Planner -->
-    <div id="planner-content" class="print-container bg-white w-full max-w-6xl p-6 sm:p-10 rounded-2xl shadow-xl border border-slate-200 relative overflow-hidden">
+    <!-- Contentor Principal do Planner (Alargado para max-w-7xl) -->
+    <div id="planner-content" class="print-container bg-white w-full max-w-7xl p-6 sm:p-10 rounded-2xl shadow-xl border border-slate-200 relative overflow-hidden">
         
         <!-- Cabeçalho com Título Principal -->
         <div class="relative text-center mb-8 pb-4 border-b border-slate-200">
@@ -141,15 +141,15 @@
         </div>
 
         <!-- SECÇÃO 1: DIAS DA SEMANA (Segunda a Domingo) -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-7 gap-3 mb-10">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-7 gap-4 mb-10">
             
             <!-- Segunda-feira -->
             <div class="border border-slate-200 rounded-xl overflow-hidden shadow-xs flex flex-col">
-                <div class="bg-sky-100 text-sky-900 py-2 text-center flex items-center justify-center gap-2">
+                <div class="bg-sky-100 text-sky-900 py-2.5 text-center flex items-center justify-center gap-2">
                     <span class="text-2xl">📅</span>
                     <span contenteditable="true" class="script-font text-2xl font-bold tracking-wide">Segunda-feira</span>
                 </div>
-                <div class="p-3 space-y-2.5 text-xs flex-1 bg-sky-50/30">
+                <div class="p-3.5 space-y-3 text-xs flex-1 bg-sky-50/30">
                     <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1 line-input"></span></div>
                     <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1 line-input"></span></div>
                     <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1 line-input"></span></div>
@@ -162,11 +162,11 @@
 
             <!-- Terça-feira -->
             <div class="border border-slate-200 rounded-xl overflow-hidden shadow-xs flex flex-col">
-                <div class="bg-amber-100 text-amber-900 py-2 text-center flex items-center justify-center gap-2">
+                <div class="bg-amber-100 text-amber-900 py-2.5 text-center flex items-center justify-center gap-2">
                     <span class="text-2xl">🚀</span>
                     <span contenteditable="true" class="script-font text-2xl font-bold tracking-wide">Terça-feira</span>
                 </div>
-                <div class="p-3 space-y-2.5 text-xs flex-1 bg-amber-50/30">
+                <div class="p-3.5 space-y-3 text-xs flex-1 bg-amber-50/30">
                     <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1 line-input"></span></div>
                     <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1 line-input"></span></div>
                     <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1 line-input"></span></div>
@@ -179,11 +179,11 @@
 
             <!-- Quarta-feira -->
             <div class="border border-slate-200 rounded-xl overflow-hidden shadow-xs flex flex-col">
-                <div class="bg-purple-100 text-purple-900 py-2 text-center flex items-center justify-center gap-2">
+                <div class="bg-purple-100 text-purple-900 py-2.5 text-center flex items-center justify-center gap-2">
                     <span class="text-2xl">🧭</span>
                     <span contenteditable="true" class="script-font text-2xl font-bold tracking-wide">Quarta-feira</span>
                 </div>
-                <div class="p-3 space-y-2.5 text-xs flex-1 bg-purple-50/30">
+                <div class="p-3.5 space-y-3 text-xs flex-1 bg-purple-50/30">
                     <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1 line-input"></span></div>
                     <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1 line-input"></span></div>
                     <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1 line-input"></span></div>
@@ -196,11 +196,11 @@
 
             <!-- Quinta-feira -->
             <div class="border border-slate-200 rounded-xl overflow-hidden shadow-xs flex flex-col">
-                <div class="bg-emerald-100 text-emerald-900 py-2 text-center flex items-center justify-center gap-2">
+                <div class="bg-emerald-100 text-emerald-900 py-2.5 text-center flex items-center justify-center gap-2">
                     <span class="text-2xl">💭</span>
                     <span contenteditable="true" class="script-font text-2xl font-bold tracking-wide">Quinta-feira</span>
                 </div>
-                <div class="p-3 space-y-2.5 text-xs flex-1 bg-emerald-50/30">
+                <div class="p-3.5 space-y-3 text-xs flex-1 bg-emerald-50/30">
                     <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1 line-input"></span></div>
                     <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1 line-input"></span></div>
                     <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1 line-input"></span></div>
@@ -213,11 +213,11 @@
 
             <!-- Sexta-feira -->
             <div class="border border-slate-200 rounded-xl overflow-hidden shadow-xs flex flex-col">
-                <div class="bg-rose-100 text-rose-900 py-2 text-center flex items-center justify-center gap-2">
+                <div class="bg-rose-100 text-rose-900 py-2.5 text-center flex items-center justify-center gap-2">
                     <span class="text-2xl">🥳</span>
                     <span contenteditable="true" class="script-font text-2xl font-bold tracking-wide">Sexta-feira</span>
                 </div>
-                <div class="p-3 space-y-2.5 text-xs flex-1 bg-rose-50/30">
+                <div class="p-3.5 space-y-3 text-xs flex-1 bg-rose-50/30">
                     <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1 line-input"></span></div>
                     <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1 line-input"></span></div>
                     <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1 line-input"></span></div>
@@ -230,11 +230,11 @@
 
             <!-- Sábado -->
             <div class="border border-slate-200 rounded-xl overflow-hidden shadow-xs flex flex-col">
-                <div class="bg-amber-100 text-amber-900 py-2 text-center flex items-center justify-center gap-2">
+                <div class="bg-amber-100 text-amber-900 py-2.5 text-center flex items-center justify-center gap-2">
                     <span class="text-2xl">☀️</span>
                     <span contenteditable="true" class="script-font text-2xl font-bold tracking-wide">Sábado</span>
                 </div>
-                <div class="p-3 space-y-2.5 text-xs flex-1 bg-amber-50/30">
+                <div class="p-3.5 space-y-3 text-xs flex-1 bg-amber-50/30">
                     <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1 line-input"></span></div>
                     <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1 line-input"></span></div>
                     <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1 line-input"></span></div>
@@ -247,11 +247,11 @@
 
             <!-- Domingo -->
             <div class="border border-slate-200 rounded-xl overflow-hidden shadow-xs flex flex-col">
-                <div class="bg-orange-100 text-orange-900 py-2 text-center flex items-center justify-center gap-2">
+                <div class="bg-orange-100 text-orange-900 py-2.5 text-center flex items-center justify-center gap-2">
                     <span class="text-2xl">🛋️</span>
                     <span contenteditable="true" class="script-font text-2xl font-bold tracking-wide">Domingo</span>
                 </div>
-                <div class="p-3 space-y-2.5 text-xs flex-1 bg-orange-50/30">
+                <div class="p-3.5 space-y-3 text-xs flex-1 bg-orange-50/30">
                     <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1 line-input"></span></div>
                     <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1 line-input"></span></div>
                     <div class="flex items-center gap-2"><input type="checkbox" class="custom-checkbox task-check"><span contenteditable="true" class="flex-1 line-input"></span></div>
