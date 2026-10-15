@@ -123,31 +123,6 @@
 </head>
 <body class="min-h-screen py-8 px-4 flex flex-col items-center">
 
-    <!-- Barra de Ações Superior (Oculta na Impressão) -->
-    <div class="no-print mb-6 flex flex-wrap items-center justify-between gap-4 w-full max-w-6xl bg-white p-4 rounded-xl shadow-sm border border-slate-200">
-        <div>
-            <h1 class="text-xl font-bold text-slate-800" contenteditable="true" id="app-title">Planner Pessoal</h1>
-            <p class="text-sm text-slate-500">Clique em qualquer texto para o editar. Os dados são guardados automaticamente numa base de dados local!</p>
-        </div>
-        <div class="flex items-center gap-3 flex-wrap">
-            <button onclick="saveData()" class="px-4 py-2 text-sm font-medium text-emerald-700 bg-emerald-50 hover:bg-emerald-100 border border-emerald-200 rounded-lg transition flex items-center gap-1.5">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-3m-1 4l-3 3m0 0l-3-3m3 3V4" />
-                </svg>
-                Guardar Alterações
-            </button>
-            <button onclick="resetPlanner()" class="px-4 py-2 text-sm font-medium text-slate-600 bg-slate-100 hover:bg-slate-200 rounded-lg transition">
-                Reiniciar Marcações
-            </button>
-            <button onclick="window.print()" class="px-5 py-2 text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 rounded-lg shadow-sm transition flex items-center gap-2">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" />
-                </svg>
-                Imprimir / Guardar PDF
-            </button>
-        </div>
-    </div>
-
     <!-- Contentor Principal do Planner -->
     <div id="planner-content" class="print-container bg-white w-full max-w-6xl p-6 sm:p-10 rounded-2xl shadow-xl border border-slate-200 relative overflow-hidden">
         
@@ -503,7 +478,7 @@
         </div>
 
         <!-- SECÇÃO 3: TRIMESTRAL, SEMESTRAL, ANUAL -->
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-10">
             
             <!-- Trimestral -->
             <div class="border border-slate-200 rounded-xl p-4 bg-white shadow-xs">
@@ -649,7 +624,28 @@
 
         </div>
 
-        <!-- Rodapé removido -->
+        <!-- Botões de Ação Apelativos no Fundo (Ocultos na Impressão) -->
+        <div class="no-print pt-6 border-t border-slate-200 flex flex-wrap items-center justify-center gap-4">
+            <button onclick="saveData()" class="px-6 py-3 text-sm font-semibold text-white bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 rounded-xl shadow-md transition transform hover:-translate-y-0.5 flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-3m-1 4l-3 3m0 0l-3-3m3 3V4" />
+                </svg>
+                Guardar Alterações
+            </button>
+            <button onclick="resetPlanner()" class="px-6 py-3 text-sm font-semibold text-slate-700 bg-gradient-to-r from-slate-100 to-slate-200 hover:from-slate-200 hover:to-slate-300 border border-slate-300 rounded-xl shadow-sm transition transform hover:-translate-y-0.5 flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                </svg>
+                Reiniciar Marcações
+            </button>
+            <button onclick="window.print()" class="px-6 py-3 text-sm font-semibold text-white bg-gradient-to-r from-indigo-600 to-blue-600 hover:from-indigo-700 hover:to-blue-700 rounded-xl shadow-md transition transform hover:-translate-y-0.5 flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" />
+                </svg>
+                Imprimir / Guardar PDF
+            </button>
+        </div>
+
     </div>
 
     <!-- Script para IndexedDB e Lógica Interativa -->
